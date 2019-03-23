@@ -5,46 +5,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
     
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
-      }
+  @media (max-width: 500px)  {
+    width: 100%;
+    flex-direction: column;
     }
+    
+  .text-content {
+    width: 48%;
+    padding-right: 1%;
+
+  @media @mobile  {
+    width: 100%;
+  } 
+  }
+
+  .img-content {
+    width: 48%;
+    padding-left: 1%;
+
+  @media @mobile {
+    width: 100%;
+  } 
+
+  img {
+    border-radius: 10px;
+  }
+  }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
+  @media @mobile  {
+    flex-direction: column-reverse;
+  }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
+  .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+  }
+
+  .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
-    img {
-      border-radius: 10px;
-    }
+  @media @mobile  {
+    width: 100%;
+  }
+
+  img {
+    border-radius: 10px;
+  }
   }
 
   .content-pick {
@@ -53,9 +73,31 @@
     display: flex;
     justify-content: space-between;
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+  @media @mobile  {
+    width: 100%;
+    flex-direction: column;
     }
+
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+
+  @media (max-width: 500px)  {
+    width: 75%;
+    margin: 0 auto 30px;
   }
+  }
+  }
+.Logo {
+  border-top: 2px dashed @navigation-border;
+}
+
+.welcome_to_fun_bus {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed @navigation-border;
+}
+
+
 }// home
+
