@@ -1,1 +1,39 @@
 // Navigation Styles here
+
+.nav_conatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:30px;
+    padding-bottom:40px;
+    // border: 2px dotted red;
+
+    @media (max-width: 500px)  {
+        flex-direction: column;
+        padding-bottom: 10px;
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+      } 
+}
+
+a{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-right:30px;
+
+    &:hover {
+        text-decoration: overline;
+        font-size: 1.6rem;
+        color: @eastern-blue;
+    }
+}
+
+.nav_section {
+    justify-content: space-between;
+}
+
